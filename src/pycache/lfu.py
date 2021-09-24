@@ -9,6 +9,7 @@ class LFUCache(Cache):
         self.least_freq = 1
         self.node_for_freq = defaultdict(OrderedDict)
         self.node_for_key = dict()
+        super().__init__(self.node_for_freq)
 
     def _update(self, key, value):
         _, freq = self.node_for_key[key]
