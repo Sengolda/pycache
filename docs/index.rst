@@ -1,20 +1,39 @@
-.. pycache documentation master file, created by
-   sphinx-quickstart on Fri Sep 24 17:12:08 2021.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to pycache 👋
+====================
 
-Welcome to pycache's documentation!
-===================================
+|License: MIT|
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    A set of tools for cache.
 
+🏠 `Homepage <https://github.com/Sengolda/pycache>`__
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Install
+-------
 
-Indices and tables
-==================
+.. code:: sh
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    pip install -U git+https://github.com/Sengolda/pycache
+
+Author
+------
+
+👤 **Sengolda**
+
+-  Github: [@Sengolda](https://github.com/Sengolda)
+
+🤝 Contributing
+--------------
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check `issues
+page <https://github.com/Sengolda/pycache/issues>`__.
+
+Show your support
+-----------------
+
+Give a ⭐️ if this project helped you!
+
+.. |License: MIT| image:: https://img.shields.io/badge/License-MIT-yellow.svg
+   :target: #
