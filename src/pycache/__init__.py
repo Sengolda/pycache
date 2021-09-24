@@ -4,11 +4,9 @@ from .cache import *
 from .lru import *
 
 if sys.version_info[:2] >= (3, 6):
-    from importlib.metadata import (PackageNotFoundError,  # pragma: no cover
-                                    version)
+    from importlib.metadata import PackageNotFoundError, version  # pragma: no cover
 else:
-    from importlib_metadata import (PackageNotFoundError,  # pragma: no cover
-                                    version)
+    from importlib_metadata import PackageNotFoundError, version  # pragma: no cover
 
 try:
     dist_name = "pycache"
