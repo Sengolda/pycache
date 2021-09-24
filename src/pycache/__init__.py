@@ -3,6 +3,7 @@ import sys
 from .cache import *
 from .lfu import *
 from .lru import *
+from .mru import *
 
 if sys.version_info[:2] >= (3, 6):
     from importlib.metadata import PackageNotFoundError, version  # pragma: no cover
