@@ -1,6 +1,6 @@
-from pycache import MRUCache
+from pycache import LFUCache
 
-cache = MRUCache()
+cache = LFUCache()
 cache["foo"] = "a"
 cache["foo1"] = "b"
 cache["foo2"] = "c"
