@@ -20,7 +20,7 @@ Author
 
 👤 **Sengolda**
 
--  Github: [@Sengolda](https://github.com/Sengolda)
+-  Github: `@Sengolda <https://github.com/Sengolda>`_
 
 🤝 Contributing
 --------------
