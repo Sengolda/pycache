@@ -1,8 +1,6 @@
 class Cache:
     def __init__(self, cache):
         self.cache = cache
-    
-
 
     def __repr__(self) -> str:
         try:

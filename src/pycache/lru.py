@@ -19,10 +19,9 @@ class LRUCache(Cache):
         self.cache[key] = value
         self.cache.move_to_end(key)
         if len(self.cache) > self.capacity:
-            self.cache.popitem(last = False)
-    
+            self.cache.popitem(last=False)
 
-    def pop(self, key, default = ...):
+    def pop(self, key, default=...):
         try:
             pop_item = self.cache.pop(str(key))
         except Exception as e:
