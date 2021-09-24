@@ -6,9 +6,9 @@ args = dict(
     description = "A set of tools for cache.",
     author = "Sengolda",
     license = "MIT",
-    long_description = open("README.rst", "r", encoding="utf-8").read(),
-    long_description_content_type = "text/x-rst",
-    url = "https://github.com/pyscaffold/pyscaffold/",
+    long_description = open("README.md", "r", encoding="utf-8").read(),
+    long_description_content_type = "text/markdown",
+    url = "https://github.com/Sengolda/create-a-cli-tool",
     classifiers = [
     "Development Status :: 4 - Beta",
     "Programming Language :: Python :: 3",
