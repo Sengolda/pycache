@@ -1,6 +1,7 @@
 import sys
 
 from .cache import *
+from .lfu import *
 from .lru import *
 
 if sys.version_info[:2] >= (3, 6):

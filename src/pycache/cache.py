@@ -22,7 +22,7 @@ class Cache:
 
     def __repr__(self) -> str:
         try:
-            return f"{self.__class__.__name__} (currentsize={len(self.cache.items())}"
+            return f"{self.__class__.__name__} (currentsize={len(self.cache.items())})"
         except AttributeError:
             return f"<{self.__class__.__name__}>"
 
