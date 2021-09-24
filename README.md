@@ -1,19 +1,32 @@
 # Welcome to pycache 👋
-    > A set of tools for cache.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#)
+
+> A set of tools for cache.
+
+### 🏠 [Homepage](https://github.com/Sengolda/pycache)
 
 ## Install
-```sh
-    # Since this lib isn't on pypi yet, You can install using git.
 
-    pip install -U git+https://github.com/Sengolda/pycache
+```sh
+pip install -U git+https://github.com/Sengolda/pycache
 ```
 
 ## Author
-👤 Sengolda
+
+👤 **Sengolda**
+
+* Github: [@Sengolda](https://github.com/Sengolda)
 
 ## 🤝 Contributing
-* Contributions, issues and feature requests are welcome!
 
+Contributions, issues and feature requests are welcome!
+
+Feel free to check [issues page]( https://github.com/Sengolda/pycache/issues). 
 
 ## Show your support
-- Give a ⭐️ if this project helped you!
+
+Give a ⭐️ if this project helped you!
+
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
