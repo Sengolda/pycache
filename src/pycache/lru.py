@@ -15,7 +15,7 @@ class LRUCache(Cache):
             self.cache.move_to_end(key)
             return self.cache[key]
 
-    def put(self, key: int, value: int) -> None:
+    def put(self, key, value) -> None:
         self.cache[key] = value
         self.cache.move_to_end(key)
         if len(self.cache) > self.capacity:
