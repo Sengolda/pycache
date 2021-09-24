@@ -17,4 +17,4 @@ class RRCache(Cache):
         except IndexError:
             raise KeyError(f"{self.__class__.__name__} is empty") from None
         else:
-            return (key, self.pop(key))
+            return (key, self[key])
