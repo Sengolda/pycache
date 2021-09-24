@@ -1,5 +1,9 @@
 import sys
 
+from .cache import *
+from .lru import *
+
+
 if sys.version_info[:2] >= (3, 6):
     from importlib.metadata import PackageNotFoundError, version  # pragma: no cover
 else:
