@@ -27,7 +27,7 @@ class Cache:
             return f"<{self.__class__.__name__}>"
 
     def __contains__(self, key):
-        return key in self.__data
+        return key in self.cache
 
     def __missing__(self, key):
         raise KeyError(key)
