@@ -4,6 +4,9 @@ from .cache import Cache
 
 
 class MRUCache(Cache):
+    """
+    Represents an MRU Cache.
+    """
     def __init__(self):
         self.__order = OrderedDict()
         super().__init__(self, self.__order)
@@ -31,6 +34,9 @@ class MRUCache(Cache):
             return (key, self.pop(key))
 
     def __update(self, key):
+        """
+        Called whanever the cache is updated.
+        """
         try:
             self.__order.move_to_end(key, last=False)
         except KeyError:

@@ -2,7 +2,7 @@ from setuptools import setup
 
 args = dict(
     name="pycache",
-    version="0.1.0b",
+    version="0.1.0",
     description="A set of tools for cache.",
     author="Sengolda",
     license="MIT",

@@ -3,6 +3,9 @@ import random
 
 
 class RRCache(Cache):
+    """
+    Represents an RR Cache.
+    """
     def __init__(self):
         super().__init__(dict())
         self.__choice = random.choice
@@ -12,6 +15,9 @@ class RRCache(Cache):
         return self.__choice
 
     def popitem(self):
+        """
+        Get a random item from the cache.
+        """
         try:
             key = self.choice(list(self))
         except IndexError:

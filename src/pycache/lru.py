@@ -4,12 +4,23 @@ from .cache import Cache
 
 
 class LRUCache(Cache):
+    """
+    Represents an LRU Cache.
+
+    Args:
+        capacity: A amount of total remains you want to have. Defaults to 128.
+    """
     def __init__(self, capacity: int = 128) -> None:
         self.cache = OrderedDict()
         self.capacity = capacity
         super().__init__(self.cache)
 
     def get(self, key):
+        """
+        Get a key.
+        Args:
+            key: The key you want to fetch.
+        """
         if key not in self.cache:
             return -1
         else:
@@ -17,6 +28,12 @@ class LRUCache(Cache):
             return self.cache[key]
 
     def put(self, key, value) -> None:
+        """
+        Put a key in the cache.
+        Args:
+            key: The key's name
+            value: The key's value.
+        """
         self.cache[key] = value
         self.cache.move_to_end(key)
         if len(self.cache) > self.capacity:

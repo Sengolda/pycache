@@ -18,7 +18,7 @@ sys.path.insert(0, os.path.join(__location__, "../src"))
 # -- Project information -----------------------------------------------------
 
 project = "pycache"
-copyright = "2021, Sengolda"
+copyright = "2021-present, Sengolda"
 author = "Sengolda"
 
 try:  # for Sphinx >= 1.7
@@ -43,6 +43,7 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "furo",
     "sphinx.ext.autodoc",
     "sphinx.ext.intersphinx",
     "sphinx.ext.todo",
@@ -75,8 +76,7 @@ exclude_patterns = [
 # The name of the Pygments (syntax highlighting) style to use.
 
 
-pygments_style = "sphinx"
-pygments_dark_style = "monokai"
+pygments_style = "friendly"
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -84,7 +84,7 @@ pygments_dark_style = "monokai"
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "alabaster"
+html_theme = "furo"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
