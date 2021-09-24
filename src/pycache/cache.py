@@ -25,21 +25,18 @@ class Cache:
             return f"{self.__class__.__name__} (currentsize={len(self.cache.items())}"
         except AttributeError:
             return f"<{self.__class__.__name__}>"
-    
 
     def __contains__(self, key):
         return key in self.__data
 
     def __missing__(self, key):
         raise KeyError(key)
-    
 
     def __iter__(self):
         return iter(self.cache)
 
     def __len__(self):
         return len(self.cache)
-    
 
     def __setitem__(self, key, value):
         size = self.getsizeof(value)
@@ -50,7 +47,7 @@ class Cache:
             _size = size
             self.__size[key] = _size
 
-    def pop(self, key, default = ...):
+    def pop(self, key, default=...):
         try:
             self.cache.pop(key)
         except Exception as e:
@@ -67,7 +64,6 @@ class Cache:
         else:
             self[key] = value = default
         return value
-    
 
     def getsizeof(self, _):
         return 1
