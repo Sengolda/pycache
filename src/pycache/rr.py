@@ -1,6 +1,7 @@
 from .cache import Cache
 import random
 
+
 class RRCache(Cache):
     def __init__(self):
         super().__init__(dict())
