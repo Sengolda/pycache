@@ -46,6 +46,7 @@ class Cache:
         else:
             _size = size
             self.__size[key] = _size
+            self.cache[key] = value
 
     def pop(self, key, default=...):
         try:

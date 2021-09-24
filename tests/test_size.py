@@ -4,4 +4,4 @@ from pycache.lru import LRUCache
 cache = LRUCache()
 cache["e"] = "E"
 
-print(cache)
+print(cache.cache)
