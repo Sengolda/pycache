@@ -8,7 +8,7 @@ class LRUCache(Cache):
         self.capacity = capacity
         super().__init__(self.cache)
 
-    def get(self, key: int) -> int:
+    def get(self, key):
         if key not in self.cache:
             return -1
         else:
