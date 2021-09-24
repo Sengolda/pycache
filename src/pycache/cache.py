@@ -37,6 +37,7 @@ class Cache:
 
     def __len__(self):
         return len(self.cache)
+    
 
     def __setitem__(self, key, value):
         size = self.getsizeof(value)
@@ -47,6 +48,9 @@ class Cache:
             _size = size
             self.__size[key] = _size
             self.cache[key] = value
+
+        def __delitem__(self, key):
+            del self.cache[key]
 
     def pop(self, key, default=...):
         try:
