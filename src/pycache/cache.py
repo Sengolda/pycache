@@ -37,7 +37,6 @@ class Cache:
 
     def __len__(self):
         return len(self.cache)
-    
 
     def __setitem__(self, key, value):
         size = self.getsizeof(value)
