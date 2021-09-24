@@ -1,6 +1,6 @@
 from pycache import RRCache
 
 cache = RRCache()
-cache['e'] = "feel"
+cache["e"] = "feel"
 
 print(cache.popitem())
