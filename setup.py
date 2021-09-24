@@ -16,6 +16,10 @@ args = dict(
     include_package_data = True,
     packages = ["pycache"],
     package_dir = {'': 'src'},
+    extra_requires={
+        "tests":
+            ["pytest"]
+    }
 )
 
 setup(**args)
