@@ -10,6 +10,7 @@ class LRUCache(Cache):
     Args:
         capacity: A amount of total remains you want to have. Defaults to 128.
     """
+
     def __init__(self, capacity: int = 128) -> None:
         self.cache = OrderedDict()
         self.capacity = capacity

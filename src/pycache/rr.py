@@ -6,6 +6,7 @@ class RRCache(Cache):
     """
     Represents an RR Cache.
     """
+
     def __init__(self):
         super().__init__(dict())
         self.__choice = random.choice

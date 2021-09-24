@@ -7,6 +7,7 @@ class MRUCache(Cache):
     """
     Represents an MRU Cache.
     """
+
     def __init__(self):
         self.__order = OrderedDict()
         super().__init__(self, self.__order)

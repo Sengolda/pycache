@@ -10,6 +10,7 @@ class LFUCache(Cache):
     Args:
         capacity: A amount of total remains you want to have.
     """
+
     def __init__(self, capacity):
         self.remain = capacity
         self.least_freq = 1
